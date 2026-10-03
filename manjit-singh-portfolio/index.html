@@ -3,265 +3,141 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta
-      name="description"
-      content="Manjit Singh - Senior Android Developer with AI/ML, LLM and mobile app expertise."
-    />
+    <meta name="description" content="Manjit Singh - Senior Android Developer" />
     <title>Manjit Singh | Senior Android Developer</title>
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=JetBrains+Mono:wght@500;600&display=swap"
-      rel="stylesheet"
-    />
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=JetBrains+Mono:wght@500;600&display=swap" rel="stylesheet" />
     <link rel="stylesheet" href="style.css" />
   </head>
   <body>
-    <header class="nav container">
-      <a class="brand" href="#home" aria-label="Go to home section">
-        <span class="logo">MS</span>
-        <span>
-          Manjit Singh
-          <small>Senior Android Engineer</small>
-        </span>
-      </a>
-
-      <nav aria-label="Main navigation">
-        <a href="#about">About</a>
-        <a href="#skills">Skills</a>
-        <a href="#ai-ml">AI/ML</a>
-        <a href="#experience">Experience</a>
-        <a href="#projects">Projects</a>
-        <a href="#services">Services</a>
-        <a href="#hire-me">Hire Me</a>
-      </nav>
-
-      <div class="nav-actions">
-        <a class="btn ghost small" href="resume.html" target="_blank">Resume</a>
-        <a class="btn small" href="#contact">Hire Me</a>
-      </div>
-    </header>
-
-    <main>
-      <section class="hero container" id="home">
-        <div class="hero-copy">
-          <div class="eyebrow">● AVAILABLE FOR ANDROID &amp; AI OPPORTUNITIES</div>
-          <h1>Manjit <span>Singh</span></h1>
-          <h2>Senior Android Developer</h2>
-          <p class="lead">
-            Building scalable Android experiences and AI-powered product features with
-            <strong>Kotlin</strong>, <strong>Java</strong>, <strong>LLM APIs</strong>, and
-            <strong>Machine Learning workflows</strong>.
-          </p>
-
-          <div class="chips">
-            <span>10+ Years Experience</span>
-            <span>Kotlin &amp; Java</span>
-            <span>AI/ML + LLM</span>
-            <span>Jetpack Compose</span>
+    <div class="page-shell">
+      <header class="topbar container">
+        <div class="brand-wrap">
+          <div class="brand-mark">MS</div>
+          <div class="brand-text">
+            <span class="brand-name">Manjit Singh</span>
+            <small>Senior Android Engineer</small>
           </div>
+        </div>
+
+        <nav class="main-nav" aria-label="Main navigation">
+          <a href="#about">About</a>
+          <a href="#skills">Skills</a>
+          <a href="#experience">Experience</a>
+          <a href="#projects">Projects</a>
+          <a href="#contact">Contact</a>
+          <a class="btn-pill is-light" href="resume.html" target="_blank">Resume</a>
+        </nav>
+      </header>
+
+      <main class="hero-section container">
+        <div class="hero-copy">
+          <span class="status-pill">● Open to Android Roles</span>
+
+          <h1>
+            Senior Android<br />
+            <span>Engineer.</span>
+          </h1>
+
+          <p class="tagline">10+ Years • Android • Kotlin • Java • Jetpack Compose</p>
 
           <p class="intro">
-            I build modern mobile apps and smart AI-powered solutions that combine native Android engineering with machine learning, LLM integrations, intelligent automation, and product-focused delivery.
+            I build scalable, high-performance Android applications and AI-enabled product experiences with modern architecture, clean code, and reliable mobile delivery.
           </p>
 
-          <div class="actions">
-            <a class="btn" href="#projects">View My Work</a>
-            <a class="btn ghost" href="resume.html" target="_blank">Download Resume</a>
+          <div class="hero-actions">
+            <a class="btn primary" href="#contact">Get in touch</a>
+            <a class="btn secondary" href="resume.html" target="_blank">Download Resume</a>
           </div>
         </div>
 
-        <div class="portrait">
-          <img src="assets/manjit-singh.png" alt="Manjit Singh portrait" />
-          <div class="status">
-            AI + MOBILE<br />
-            <span>ANDROID &amp; LLM ENGINEERING</span>
+        <div class="hero-visual">
+          <div class="profile-card">
+            <img src="assets/manjit-singh.png" alt="Manjit Singh portrait" />
+
+            <span class="float-tag first">AI / ML</span>
+            <span class="float-tag second">MVVM • Viper</span>
+            <span class="float-tag third">10+ Apps</span>
+
+            <div class="profile-footer">
+              <strong>Manjit Singh</strong>
+              <small>Senior Android Engineer • Android • Kotlin</small>
+            </div>
+          </div>
+        </div>
+      </main>
+
+      <section id="about" class="content-section container">
+        <div class="section-label">About</div>
+        <div class="split-grid">
+          <div>
+            <h2>Engineering Android experiences that are built to last.</h2>
+          </div>
+          <div>
+            <p>
+              I’m a Senior Android Developer with 10+ years of experience building and scaling Android apps for real users. My work focuses on clean architecture, maintainable code, smooth UI/UX, and strong product delivery.
+            </p>
           </div>
         </div>
       </section>
 
-      <section class="container" id="about">
-        <div class="section-label">01 / ABOUT</div>
-        <h3>Engineering Android experiences with <span>AI intelligence.</span></h3>
-        <div class="two-col">
-          <p>
-            I’m a Senior Android Developer with 10+ years of experience delivering high-impact mobile products. My focus is clean architecture, scalable code, polished user experiences, and next-generation AI-powered product features.
-          </p>
-          <p>
-            I work across Android app development, Kotlin/Java, LLM integration, AI-powered workflows, Firebase, API architecture, automation, and product deployment for real-world business needs.
-          </p>
+      <section id="skills" class="content-section container">
+        <div class="section-label">Skills</div>
+        <div class="skills-grid">
+          <article><b>Languages & UI</b><p>Kotlin · Java · Jetpack Compose · Android SDK · Material 3</p></article>
+          <article><b>Architecture</b><p>MVVM · MVI · Clean Architecture · Coroutines · Flow</p></article>
+          <article><b>AI / LLM</b><p>Prompt Engineering · RAG · LLM APIs · AI Automation</p></article>
+          <article><b>Networking</b><p>Retrofit · OkHttp · REST APIs · WebSockets</p></article>
+          <article><b>Data</b><p>Room · Firebase · Firestore · FCM · Crashlytics</p></article>
+          <article><b>Delivery</b><p>GitHub · CI/CD · Play Console · App Maintenance</p></article>
         </div>
       </section>
 
-      <section class="container" id="skills">
-        <div class="section-label">02 / TECHNICAL SKILLS</div>
-        <h3>My Android <span>toolkit.</span></h3>
-        <div class="grid skills">
-          <article>
-            <b>Languages &amp; UI</b>
-            <p>Kotlin · Java · Jetpack Compose · Android SDK · Material 3</p>
-          </article>
-          <article>
-            <b>Architecture</b>
-            <p>MVVM · MVI · Clean Architecture · Coroutines · Flow</p>
-          </article>
-          <article>
-            <b>Networking &amp; DI</b>
-            <p>Retrofit · OkHttp · REST APIs · Hilt · Dagger · Koin</p>
-          </article>
-          <article>
-            <b>Data &amp; Firebase</b>
-            <p>Room · Firestore · FCM · Crashlytics · Analytics</p>
-          </article>
-          <article>
-            <b>AI / ML</b>
-            <p>LLM APIs · Prompt Design · RAG · NLP · Model Integration · AI Automation</p>
-          </article>
-          <article>
-            <b>Delivery</b>
-            <p>Git · GitHub · CI/CD · Play Console · App Maintenance</p>
-          </article>
-        </div>
-      </section>
-
-      <section class="container" id="ai-ml">
-        <div class="section-label">03 / AI / ML / LLM</div>
-        <h3>AI-powered capabilities for <span>modern products.</span></h3>
-        <div class="ai-grid">
-          <article class="ai-card">
-            <h4>LLM Integration</h4>
-            <p>Integrating OpenAI, Gemini, and custom LLM APIs into Android and web-based product experiences.</p>
-          </article>
-          <article class="ai-card">
-            <h4>RAG &amp; NLP</h4>
-            <p>Building retrieval workflows, semantic search, content summarization, and document intelligence features.</p>
-          </article>
-          <article class="ai-card">
-            <h4>AI Automation</h4>
-            <p>Designing automated workflows for support, productivity, smart recommendations, and user assistance.</p>
-          </article>
-          <article class="ai-card">
-            <h4>ML Fundamentals</h4>
-            <p>Applying data-driven decision making, modeling workflows, and intelligent app features for business use cases.</p>
-          </article>
-          <article class="ai-card">
-            <h4>Prompt Engineering</h4>
-            <p>Creating structured prompts, response tuning, and user-friendly AI interactions that feel native to the product.</p>
-          </article>
-          <article class="ai-card">
-            <h4>AI Product Delivery</h4>
-            <p>Turning AI concepts into practical, usable products with clear UX, monitoring, and production readiness.</p>
-          </article>
-        </div>
-      </section>
-
-      <section class="container" id="experience">
-        <div class="section-label">04 / EXPERIENCE</div>
-        <h3>10+ years focused on <span>mobile &amp; AI.</span></h3>
+      <section id="experience" class="content-section container">
+        <div class="section-label">Experience</div>
         <div class="timeline">
           <article>
             <span>Current Focus</span>
-            <h4>Senior Android Developer / AI Product Engineer</h4>
-            <p>
-              Designing native Android apps and AI-assisted product features using Kotlin, Java, Jetpack Compose, LLM APIs, automation, and clean architecture patterns.
-            </p>
+            <h4>Senior Android Developer</h4>
+            <p>Designing and delivering production-ready Android apps with strong architecture, performance tuning, and modern UI patterns.</p>
           </article>
           <article>
-            <span>Freelance Services</span>
-            <h4>Android Development, AI Integrations &amp; Maintenance</h4>
-            <p>
-              App development, bug fixing, Firebase integrations, SDK upgrades, AI API implementation, and performance optimization for business products.
-            </p>
+            <span>Freelance</span>
+            <h4>App Development & Maintenance</h4>
+            <p>Building, fixing, integrating, and optimizing Android applications with API, Firebase, cleanup, and release support.</p>
           </article>
         </div>
       </section>
 
-      <section class="container" id="projects">
-        <div class="section-label">05 / FEATURED PROJECTS</div>
-        <h3>Selected <span>work.</span></h3>
-        <p class="muted">Showcasing strong Android product, automation, and AI-enabled engineering experience.</p>
-        <div class="grid projects">
+      <section id="projects" class="content-section container">
+        <div class="section-label">Projects</div>
+        <div class="project-grid">
           <article>
             <div class="project-no">01</div>
-            <h4>AI Assistant App</h4>
-            <p>Built a smart assistant experience with LLM-powered conversations, prompt workflows, and Android UI integration.</p>
-            <span>Kotlin · LLM API · Jetpack Compose</span>
+            <h4>Android App Project</h4>
+            <p>Scalable Android product with clean UI and architecture.</p>
+            <span>Kotlin · Compose · MVVM</span>
           </article>
           <article>
             <div class="project-no">02</div>
-            <h4>Business App with Smart Features</h4>
-            <p>Developed business workflows with AI recommendations, smart notifications, and real-time data integration.</p>
-            <span>Kotlin · Firebase · AI Automation</span>
+            <h4>Business App</h4>
+            <p>AI-assisted workflow app with realtime data and notifications.</p>
+            <span>Firebase · AI · API</span>
           </article>
           <article>
             <div class="project-no">03</div>
-            <h4>Enterprise / Utility App</h4>
-            <p>Delivered Android products with data intelligence, performance tuning, and seamless user experience improvement.</p>
-            <span>Java/Kotlin · Clean Architecture · ML</span>
+            <h4>Enterprise App</h4>
+            <p>Improved app reliability and release flow for large usage.</p>
+            <span>Java · Kotlin · Play Store</span>
           </article>
         </div>
       </section>
 
-      <section class="container" id="services">
-        <div class="section-label">06 / SERVICES</div>
-        <h3>How I can <span>help.</span></h3>
-        <div class="grid services">
-          <article>Android App Development</article>
-          <article>Jetpack Compose Development</article>
-          <article>AI &amp; LLM Integration</article>
-          <article>Prompt Engineering &amp; NLP</article>
-          <article>Firebase &amp; REST API Integration</article>
-          <article>Play Store Publishing &amp; App Upgrades</article>
-        </div>
-      </section>
-
-      <section class="container hire-me" id="hire-me">
-        <div class="section-label">07 / WHY HIRE ME</div>
-        <h3>Experienced developer ready to <span>build and scale AI-enabled products.</span></h3>
-
-        <div class="hire-grid">
-          <article class="hire-card">
-            <h4>What I bring</h4>
-            <ul>
-              <li>10+ years of Android product experience</li>
-              <li>Strong Kotlin, Java, Compose and architecture skills</li>
-              <li>AI/ML and LLM integration experience</li>
-              <li>Modern product UX and clean code practices</li>
-              <li>Execution from concept to production release</li>
-            </ul>
-          </article>
-
-          <article class="hire-card accent">
-            <h4>Client-friendly workflow</h4>
-            <ul>
-              <li>Business requirement understanding</li>
-              <li>AI feature planning and integration</li>
-              <li>Fast delivery with clear communication</li>
-              <li>Performance tuning and maintenance</li>
-              <li>Reliable product support and iteration</li>
-            </ul>
-          </article>
-
-          <article class="hire-card">
-            <h4>Availability</h4>
-            <ul>
-              <li>Open for full-time, contract, and freelance roles</li>
-              <li>Remote or project-based engagement</li>
-              <li>Ready for Android app and AI product work</li>
-              <li>Available for startups, businesses, and product teams</li>
-            </ul>
-          </article>
-        </div>
-      </section>
-
-      <section class="container contact" id="contact">
-        <div class="section-label">08 / CONTACT</div>
-        <h3>Have an Android or AI project?<br /><span>Let’s build it.</span></h3>
-        <p>
-          Available for Android development, AI/ML product work, LLM integrations, and technical collaboration.
-        </p>
-
-        <div class="contact-box">
+      <section id="contact" class="content-section container contact-wrap">
+        <div class="section-label">Contact</div>
+        <h3>Have an Android project?<br /><span>Let’s build it.</span></h3>
+        <div class="contact-boxes">
           <div>
             <span>Email</span>
             <a href="mailto:mbmanjit5@gmail.com">mbmanjit5@gmail.com</a>
@@ -275,20 +151,10 @@
             <a href="https://github.com/manjit1990" target="_blank" rel="noopener">github.com/manjit1990</a>
           </div>
         </div>
-
-        <div class="actions">
-          <a class="btn" href="https://www.linkedin.com/in/manjit-singh-immediate-joiner-2b732021/" target="_blank" rel="noopener">Hire Me on LinkedIn</a>
-          <a class="btn ghost" href="mailto:mbmanjit5@gmail.com">Email Me</a>
-          <a class="btn ghost" href="resume.html" target="_blank">View Resume</a>
-        </div>
       </section>
     </main>
+  </div>
 
-    <footer class="container">
-      <b>Manjit Singh</b>
-      <span>Senior Android Developer · AI/ML · LLM · Kotlin · Java</span>
-    </footer>
-
-    <script src="script.js"></script>
+  <script src="script.js"></script>
   </body>
 </html>
