@@ -1,0 +1,255 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Manjit Singh | Resume</title>
+    <style>
+      :root {
+        --bg: #071315;
+        --surface: #0f1d20;
+        --surface-2: #12282d;
+        --text: #edf7f2;
+        --muted: #b3c8c3;
+        --primary: #67e8c3;
+        --secondary: #8ba6ff;
+        --line: rgba(255,255,255,0.08);
+      }
+
+      * { box-sizing: border-box; }
+
+      body {
+        margin: 0;
+        font-family: Inter, Arial, sans-serif;
+        color: var(--text);
+        background: linear-gradient(135deg, #071315, #0b1319 40%, #0d191d);
+      }
+
+      .page {
+        max-width: 980px;
+        margin: 36px auto;
+        background: rgba(15, 29, 32, 0.92);
+        border: 1px solid var(--line);
+        border-radius: 24px;
+        box-shadow: 0 24px 60px rgba(0,0,0,0.28);
+        overflow: hidden;
+      }
+
+      .header {
+        padding: 36px 40px 28px;
+        background: linear-gradient(135deg, rgba(103,232,195,0.1), rgba(139,166,255,0.08));
+        border-bottom: 1px solid var(--line);
+      }
+
+      .header-top {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        gap: 24px;
+        flex-wrap: wrap;
+      }
+
+      h1 {
+        margin: 0;
+        font-size: clamp(2.1rem, 4vw, 3.2rem);
+        letter-spacing: -0.05em;
+      }
+
+      .role {
+        margin-top: 8px;
+        color: var(--primary);
+        font-weight: 700;
+        letter-spacing: 0.08em;
+        text-transform: uppercase;
+        font-size: 0.8rem;
+      }
+
+      .actions {
+        display: flex;
+        gap: 12px;
+        flex-wrap: wrap;
+      }
+
+      .btn {
+        display: inline-block;
+        padding: 12px 16px;
+        border-radius: 10px;
+        font-weight: 700;
+        text-decoration: none;
+      }
+
+      .btn.primary {
+        background: linear-gradient(135deg, var(--primary), #99f5d6);
+        color: #071315;
+      }
+
+      .btn.secondary {
+        border: 1px solid var(--line);
+        color: var(--text);
+      }
+
+      .content {
+        display: grid;
+        grid-template-columns: 1.1fr 1.5fr;
+        gap: 24px;
+        padding: 28px 40px 40px;
+      }
+
+      .sidebar,
+      .main {
+        display: grid;
+        gap: 24px;
+      }
+
+      .card {
+        background: rgba(255,255,255,0.02);
+        border: 1px solid var(--line);
+        border-radius: 16px;
+        padding: 20px 18px;
+      }
+
+      .card h2 {
+        margin: 0 0 12px;
+        font-size: 0.9rem;
+        letter-spacing: 0.12em;
+        text-transform: uppercase;
+        color: var(--primary);
+      }
+
+      .list {
+        margin: 0;
+        padding-left: 18px;
+        color: var(--muted);
+        line-height: 1.8;
+      }
+
+      .main h3 {
+        margin: 0 0 8px;
+        font-size: 1.1rem;
+      }
+
+      .meta {
+        margin-bottom: 12px;
+        color: var(--muted);
+        font-size: 0.92rem;
+      }
+
+      p {
+        color: var(--muted);
+        margin: 0 0 14px;
+      }
+
+      .skill-tags {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 10px;
+      }
+
+      .skill-tags span {
+        border: 1px solid rgba(103,232,195,0.25);
+        background: rgba(103,232,195,0.05);
+        color: var(--text);
+        border-radius: 999px;
+        padding: 8px 12px;
+        font-size: 0.75rem;
+      }
+
+      @media (max-width: 760px) {
+        .page { margin: 18px 12px; }
+        .header, .content { padding-left: 20px; padding-right: 20px; }
+        .content { grid-template-columns: 1fr; }
+      }
+    </style>
+  </head>
+  <body>
+    <div class="page">
+      <header class="header">
+        <div class="header-top">
+          <div>
+            <h1>Manjit Singh</h1>
+            <div class="role">Senior Android Developer</div>
+          </div>
+          <div class="actions">
+            <a class="btn primary" href="index.html">Back to Portfolio</a>
+            <a class="btn secondary" href="index.html" download>Download Portfolio</a>
+          </div>
+        </div>
+      </header>
+
+      <main class="content">
+        <aside class="sidebar">
+          <section class="card">
+            <h2>Contact</h2>
+            <ul class="list">
+              <li>Email: manjit.singh.dev@gmail.com</li>
+              <li>Phone: +91 00000 00000</li>
+              <li>LinkedIn: /in/manjit-singh</li>
+              <li>Portfolio: github.com/manjit1990</li>
+            </ul>
+          </section>
+
+          <section class="card">
+            <h2>Core Skills</h2>
+            <ul class="list">
+              <li>Kotlin</li>
+              <li>Java</li>
+              <li>Jetpack Compose</li>
+              <li>MVVM / MVI</li>
+              <li>Firebase</li>
+              <li>REST APIs</li>
+              <li>Play Store &amp; App Maintenance</li>
+            </ul>
+          </section>
+
+          <section class="card">
+            <h2>Expertise</h2>
+            <ul class="list">
+              <li>Android App Development</li>
+              <li>Modern UI/UX</li>
+              <li>Architecture &amp; Optimization</li>
+              <li>API Integration</li>
+              <li>App Deployment</li>
+            </ul>
+          </section>
+        </aside>
+
+        <section class="main">
+          <div class="card">
+            <h3>Professional Summary</h3>
+            <p>
+              Senior Android Developer with 10+ years of experience building scalable, high-performance Android applications.
+              Skilled in Kotlin, Java, Jetpack Compose, clean architecture, API integrations, Firebase, and app optimization.
+            </p>
+          </div>
+
+          <div class="card">
+            <h3>Experience</h3>
+            <div class="meta">Senior Android Developer | 10+ Years Experience</div>
+            <p>
+              Delivered production-ready Android applications with a strong focus on performance, maintainability, and user experience.
+              Worked across architecture design, UI implementation, API integrations, Firebase services, debugging, and app release workflows.
+            </p>
+          </div>
+
+          <div class="card">
+            <h3>Technical Stack</h3>
+            <div class="skill-tags">
+              <span>Kotlin</span>
+              <span>Java</span>
+              <span>Jetpack Compose</span>
+              <span>MVVM</span>
+              <span>MVI</span>
+              <span>Retrofit</span>
+              <span>Firebase</span>
+              <span>Room</span>
+              <span>Hilt</span>
+              <span>Git</span>
+              <span>CI/CD</span>
+              <span>Play Console</span>
+            </div>
+          </div>
+        </section>
+      </main>
+    </div>
+  </body>
+</html>
