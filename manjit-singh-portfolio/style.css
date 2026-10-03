@@ -577,3 +577,19 @@ button, a {
     height: 520px;
   }
 }
+
+.build-intro {
+  margin: 48px 0 22px;
+}
+
+.build-intro h3 {
+  margin: 0 0 8px;
+  font-size: clamp(1.8rem, 2.6vw, 2.6rem);
+  letter-spacing: -0.04em;
+}
+
+.build-intro p {
+  margin: 0;
+  color: var(--muted);
+  line-height: 1.7;
+}
