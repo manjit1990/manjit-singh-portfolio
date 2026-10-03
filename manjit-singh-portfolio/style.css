@@ -298,7 +298,8 @@ section h3 span {
 .skills article,
 .projects article,
 .services article,
-.timeline article {
+.timeline article,
+.hire-card {
   background: linear-gradient(180deg, rgba(17, 27, 28, 0.9), rgba(13, 18, 21, 0.8));
   border: 1px solid var(--line);
   border-radius: 22px;
@@ -308,7 +309,8 @@ section h3 span {
 
 .skills article b,
 .projects article h4,
-.timeline article h4 {
+.timeline article h4,
+.hire-card h4 {
   display: block;
   color: var(--text);
   font-size: 1.08rem;
@@ -318,7 +320,9 @@ section h3 span {
 .skills article p,
 .projects article p,
 .timeline article p,
-.contact p {
+.contact p,
+.hire-card li,
+.contact-box a {
   margin: 0;
   color: var(--muted);
 }
@@ -389,8 +393,57 @@ section h3 span {
   padding: 20px 16px;
 }
 
+.hire-grid {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 22px;
+  margin-top: 24px;
+}
+
+.hire-card ul {
+  margin: 0;
+  padding-left: 18px;
+  display: grid;
+  gap: 10px;
+}
+
+.hire-card.accent {
+  background: linear-gradient(180deg, rgba(103, 232, 195, 0.09), rgba(20, 24, 25, 0.8));
+  border-color: rgba(103, 232, 195, 0.25);
+}
+
 .contact {
   text-align: center;
+}
+
+.contact-box {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 18px;
+  margin: 28px auto 0;
+  max-width: 900px;
+}
+
+.contact-box > div {
+  background: rgba(255,255,255,0.02);
+  border: 1px solid var(--line);
+  border-radius: 18px;
+  padding: 18px 16px;
+  text-align: left;
+}
+
+.contact-box span {
+  display: block;
+  margin-bottom: 8px;
+  font-size: 0.75rem;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  color: var(--primary);
+}
+
+.contact-box a {
+  color: var(--text);
+  text-decoration: none;
 }
 
 .contact .actions {
@@ -425,7 +478,9 @@ footer b {
   }
 
   .grid,
-  .two-col {
+  .two-col,
+  .hire-grid,
+  .contact-box {
     grid-template-columns: 1fr 1fr;
   }
 }
@@ -445,7 +500,9 @@ footer b {
   }
 
   .grid,
-  .two-col {
+  .two-col,
+  .hire-grid,
+  .contact-box {
     grid-template-columns: 1fr;
   }
 
