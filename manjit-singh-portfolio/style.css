@@ -299,7 +299,8 @@ section h3 span {
 .projects article,
 .services article,
 .timeline article,
-.hire-card {
+.hire-card,
+.ai-card {
   background: linear-gradient(180deg, rgba(17, 27, 28, 0.9), rgba(13, 18, 21, 0.8));
   border: 1px solid var(--line);
   border-radius: 22px;
@@ -310,7 +311,8 @@ section h3 span {
 .skills article b,
 .projects article h4,
 .timeline article h4,
-.hire-card h4 {
+.hire-card h4,
+.ai-card h4 {
   display: block;
   color: var(--text);
   font-size: 1.08rem;
@@ -322,7 +324,8 @@ section h3 span {
 .timeline article p,
 .contact p,
 .hire-card li,
-.contact-box a {
+.contact-box a,
+.ai-card p {
   margin: 0;
   color: var(--muted);
 }
@@ -352,6 +355,16 @@ section h3 span {
 .muted {
   color: var(--muted);
   margin-top: 0;
+}
+
+.ai-grid {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 22px;
+}
+
+.ai-card {
+  min-height: 170px;
 }
 
 .timeline {
@@ -479,6 +492,7 @@ footer b {
 
   .grid,
   .two-col,
+  .ai-grid,
   .hire-grid,
   .contact-box {
     grid-template-columns: 1fr 1fr;
@@ -501,6 +515,7 @@ footer b {
 
   .grid,
   .two-col,
+  .ai-grid,
   .hire-grid,
   .contact-box {
     grid-template-columns: 1fr;
