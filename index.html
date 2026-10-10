@@ -3,325 +3,594 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta
-      name="description"
-      content="Manjit Singh - Senior Android Developer with 10+ years of experience building scalable mobile apps using Kotlin, Jetpack Compose, KMP, and AI integrations."
-    />
-    <title>Manjit Singh | Senior Android Developer</title>
+    <meta name="description" content="Manjit Singh - Senior Mobile Engineer. I build production-ready mobile apps from idea to launch: Android, Kotlin, Jetpack Compose, Kotlin Multiplatform, iOS, Firebase, AI and CI/CD." />
+    <meta name="keywords" content="Android Developer, Kotlin Developer, Jetpack Compose, Kotlin Multiplatform, KMP Developer, Mobile App Developer, Senior Mobile Engineer, AI Mobile Apps" />
+    
+    <!-- Open Graph -->
+    <meta property="og:title" content="Manjit Singh | Senior Mobile Engineer | Android • Kotlin • KMP • AI" />
+    <meta property="og:description" content="I build production-ready mobile products from idea to launch. Android, iOS/KMP, APIs, Firebase, payments, maps, AI and CI/CD." />
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://manjit-bhatia.netlify.app/" />
+    
+    <title>Manjit Singh | Senior Mobile Engineer | Android • Kotlin • KMP • AI</title>
+    
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap"
-      rel="stylesheet"
-    />
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=JetBrains+Mono:wght@500;600&display=swap" rel="stylesheet" />
     <link rel="stylesheet" href="style.css" />
   </head>
   <body>
     <div class="page-shell">
       <header class="topbar container">
-        <a href="index.html" class="brand" aria-label="Manjit Singh home">
-          <span class="brand-mark">MS</span>
-          <span class="brand-text">
-            <strong>Manjit Singh</strong>
-            <small>Android Developer</small>
-          </span>
-        </a>
+        <div class="brand-wrap">
+          <div class="brand-mark">MS</div>
+          <div class="brand-text">
+            <span class="brand-name">Manjit Singh</span>
+            <small>Senior Mobile Engineer</small>
+          </div>
+        </div>
 
         <nav class="main-nav" aria-label="Main navigation">
           <a href="#about">About</a>
           <a href="#tech">Tech</a>
-          <a href="services.html">Services</a>
+          <a href="#services">Services</a>
           <a href="#projects">Projects</a>
           <a href="#process">Process</a>
-          <a href="#contact" class="btn-pill">Hire Me</a>
+          <a href="#contact">Contact</a>
+          <a class="btn-pill is-light" href="./manjit-singh-portfolio/Manjit_Resume.pdf" download="Manjit_Singh_Resume.pdf">Download Resume</a>
         </nav>
       </header>
 
       <main>
-        <section class="hero container">
+        <!-- HERO SECTION -->
+        <section class="hero-section container">
           <div class="hero-copy">
-            <div class="eyebrow">Available for projects</div>
+            <span class="status-pill">Available for Projects</span>
+
             <h1>
-              Senior Android
+              Senior Mobile<br />
               <span>Engineer</span>
             </h1>
-            <p class="tagline">Kotlin • Jetpack Compose • KMP • Firebase • AI Apps</p>
-            <p>
-              I build scalable mobile products from concept to launch. With 10+ years
-              of experience, I design clean architecture, ship production-ready apps,
-              and deliver digital experiences that feel premium and perform reliably.
+
+            <p class="tagline">Android • Kotlin • Jetpack Compose • Kotlin Multiplatform • AI</p>
+
+            <p class="intro">
+              I build production-ready mobile products from idea to launch, including Android, iOS/KMP, APIs, Firebase, payments, maps, AI integrations and CI/CD.
             </p>
 
+            <div class="hero-metrics" aria-label="Career highlights">
+              <span>10+ Years</span>
+              <span>Android</span>
+              <span>Kotlin</span>
+              <span>Jetpack Compose</span>
+              <span>KMP</span>
+              <span>AI</span>
+            </div>
+
             <div class="hero-actions">
-              <a href="#projects" class="btn primary">View My Work</a>
-              <a href="#contact" class="btn secondary">Let's Discuss</a>
+              <a class="btn primary" href="#projects">View My Work</a>
+              <a class="btn secondary" href="#contact">Let's Discuss Your Project</a>
             </div>
-
-            <ul class="mini-stats" aria-label="Career stats">
-              <li><strong>10+</strong><span>Years of experience</span></li>
-              <li><strong>Android</strong><span>Specialist</span></li>
-              <li><strong>Kotlin</strong><span>Core stack</span></li>
-            </ul>
           </div>
 
-          <div class="hero-visual" aria-hidden="true">
+          <div class="hero-visual">
             <div class="profile-card">
-              <div class="profile-glow"></div>
-              <div class="profile-box">
-                <div class="profile-badge">Senior</div>
-                <div class="profile-name">Manjit Singh</div>
-                <div class="profile-role">Android Engineer</div>
+              <img src="./manjit-singh-portfolio/assets/manjit-singh.png" alt="Manjit Singh, Senior Mobile Engineer" />
+
+              <span class="float-tag first">10+ Years</span>
+              <span class="float-tag second">Production Apps</span>
+              <span class="float-tag third">AI Ready</span>
+
+              <div class="profile-footer">
+                <strong>Manjit Singh</strong>
+                <small>Senior Mobile Engineer</small>
               </div>
-              <div class="floating-chip chip-one">10+ Years</div>
-              <div class="floating-chip chip-two">Production Apps</div>
-              <div class="floating-chip chip-three">KMP</div>
             </div>
           </div>
         </section>
 
+        <!-- ABOUT SECTION -->
         <section id="about" class="content-section container">
-          <div class="section-header align-left">
-            <span class="section-tag">About me</span>
-            <h2>I create modern Android experiences that scale with real business needs.</h2>
-          </div>
-
-          <div class="about-grid">
-            <div class="about-card">
-              <p>
-                I’m a Senior Android Developer with a strong background in mobile app architecture,
-                product design collaboration, and end-to-end delivery. My work focuses on building
-                apps that are clean, maintainable, efficient, and ready for market growth.
-              </p>
-              <p>
-                I help startups, businesses, and digital teams transform ideas into polished Android
-                experiences using Kotlin, Jetpack Compose, APIs, Firebase, cloud integrations, and
-                modern engineering practices.
-              </p>
+          <div class="section-label">About</div>
+          <div class="split-grid">
+            <div>
+              <h2>Building mobile products that scale.</h2>
             </div>
-
-            <div class="feature-list">
-              <div>
-                <strong>Modern Android</strong>
-                <span>Jetpack Compose, MVVM, Coroutines, lifecycle-aware architecture.</span>
-              </div>
-              <div>
-                <strong>Product delivery</strong>
-                <span>From feature planning to build release and post-launch support.</span>
-              </div>
-              <div>
-                <strong>Business-focused</strong>
-                <span>Apps engineered for performance, usability, and scalable growth.</span>
-              </div>
+            <div>
+              <p>
+                I'm a Senior Mobile Engineer with 10+ years of experience building and delivering Android applications for real users. My work focuses on production-ready architecture, maintainable code, modern UI with Jetpack Compose, Firebase integrations, AI/LLM features, and reliable CI/CD pipelines.
+              </p>
+              <p>
+                I work with startups, businesses, and agencies to turn ideas into shipped products on the Play Store and App Store.
+              </p>
             </div>
           </div>
         </section>
 
+        <!-- TECHNOLOGY SECTION -->
         <section id="tech" class="content-section container">
-          <div class="section-header center">
-            <span class="section-tag">Technology stack</span>
-            <h2>Tools and systems I work with every day.</h2>
+          <div class="section-label">Technology</div>
+          <div class="tech-intro">
+            <h2>Stack I work with</h2>
           </div>
-
+          
           <div class="tech-grid">
-            <article class="tech-card">
+            <div class="tech-category">
               <h3>Languages & UI</h3>
               <ul>
                 <li>Kotlin</li>
                 <li>Java</li>
                 <li>Jetpack Compose</li>
-                <li>Material 3</li>
                 <li>Android SDK</li>
+                <li>Material Design 3</li>
               </ul>
-            </article>
-
-            <article class="tech-card">
+            </div>
+            
+            <div class="tech-category">
               <h3>Architecture</h3>
               <ul>
                 <li>MVVM</li>
-                <li>MVP</li>
+                <li>MVI</li>
                 <li>Clean Architecture</li>
                 <li>Coroutines</li>
                 <li>Flow</li>
               </ul>
-            </article>
-
-            <article class="tech-card">
+            </div>
+            
+            <div class="tech-category">
               <h3>Backend & APIs</h3>
               <ul>
                 <li>REST APIs</li>
-                <li>Retrofit</li>
-                <li>OkHttp</li>
                 <li>Firebase</li>
                 <li>Firestore</li>
+                <li>Retrofit</li>
+                <li>OkHttp</li>
               </ul>
-            </article>
-
-            <article class="tech-card">
+            </div>
+            
+            <div class="tech-category">
               <h3>Integrations</h3>
               <ul>
-                <li>Maps</li>
-                <li>Payments</li>
-                <li>Notifications</li>
-                <li>Crash Reporting</li>
+                <li>Firebase Cloud Messaging</li>
+                <li>Google Maps</li>
+                <li>Payment APIs</li>
                 <li>WebSockets</li>
+                <li>Crashlytics</li>
               </ul>
-            </article>
-
-            <article class="tech-card">
-              <h3>AI & Mobile</h3>
+            </div>
+            
+            <div class="tech-category">
+              <h3>AI & ML</h3>
               <ul>
                 <li>LLM APIs</li>
                 <li>AI Chat</li>
-                <li>Prompt Design</li>
-                <li>Smart Features</li>
-                <li>Automation</li>
+                <li>RAG (Retrieval-Augmented Generation)</li>
+                <li>Prompt Engineering</li>
+                <li>AI Automation</li>
               </ul>
-            </article>
-
-            <article class="tech-card">
-              <h3>Multi-platform</h3>
+            </div>
+            
+            <div class="tech-category">
+              <h3>Multiplatform & DevOps</h3>
               <ul>
-                <li>Kotlin Multiplatform</li>
-                <li>iOS collaboration</li>
-                <li>CI/CD</li>
+                <li>Kotlin Multiplatform (KMP)</li>
+                <li>iOS Development</li>
                 <li>GitHub Actions</li>
-                <li>App Store</li>
+                <li>CI/CD Pipelines</li>
+                <li>Play Store & App Store</li>
               </ul>
-            </article>
+            </div>
           </div>
         </section>
 
-        <section class="content-section container" id="services">
-          <div class="section-header center">
-            <span class="section-tag">Services</span>
-            <h2>Android app development services tailored to product growth.</h2>
+        <!-- SERVICES SECTION -->
+        <section id="services" class="content-section container">
+          <div class="section-label">Services</div>
+          <div class="services-intro">
+            <h2>Types of mobile products I can build</h2>
+            <p>I design and develop complete mobile applications end-to-end, from architecture to release.</p>
           </div>
 
           <div class="services-grid">
-            <article class="service-card">
-              <div class="icon">01</div>
-              <h3>Android App Development</h3>
-              <p>Custom Android applications built for performance, maintainability, and user delight.</p>
-            </article>
+            <!-- ON-DEMAND APPS -->
+            <div class="service-category">
+              <h3>On-Demand Apps</h3>
+              <ul>
+                <li>Taxi / Ride-hailing</li>
+                <li>Food delivery</li>
+                <li>Home services</li>
+                <li>Logistics</li>
+              </ul>
+            </div>
 
-            <article class="service-card">
-              <div class="icon">02</div>
-              <h3>UI/UX Design</h3>
-              <p>Clean, modern mobile interfaces designed around user behavior and product clarity.</p>
-            </article>
+            <!-- MARKETPLACE & E-COMMERCE -->
+            <div class="service-category">
+              <h3>Marketplace & E-Commerce</h3>
+              <ul>
+                <li>E-commerce</li>
+                <li>Local marketplace</li>
+                <li>Multi-vendor marketplace</li>
+                <li>Real estate</li>
+              </ul>
+            </div>
 
-            <article class="service-card">
-              <div class="icon">03</div>
-              <h3>App Architecture</h3>
-              <p>Scalable app foundations using best practices for code structure and future growth.</p>
-            </article>
+            <!-- FINTECH -->
+            <div class="service-category">
+              <h3>FinTech</h3>
+              <ul>
+                <li>Payment apps</li>
+                <li>Wallets</li>
+                <li>Financial applications</li>
+                <li>Money transfers</li>
+              </ul>
+            </div>
 
-            <article class="service-card">
-              <div class="icon">04</div>
-              <h3>API Integration</h3>
-              <p>Secure backend communication, payment systems, maps, services, and data sync layers.</p>
-            </article>
+            <!-- AI-POWERED APPS -->
+            <div class="service-category">
+              <h3>AI-Powered Apps</h3>
+              <ul>
+                <li>AI chatbots</li>
+                <li>LLM integrations</li>
+                <li>AI assistants</li>
+                <li>AI-powered features</li>
+              </ul>
+            </div>
 
-            <article class="service-card">
-              <div class="icon">05</div>
-              <h3>Performance Optimization</h3>
-              <p>Faster app startup, smoother rendering, better memory use, and user retention.</p>
-            </article>
+            <!-- SOCIAL & COMMUNICATION -->
+            <div class="service-category">
+              <h3>Social & Communication</h3>
+              <ul>
+                <li>Chat applications</li>
+                <li>Community apps</li>
+                <li>Social platforms</li>
+                <li>Real-time messaging</li>
+              </ul>
+            </div>
 
-            <article class="service-card">
-              <div class="icon">06</div>
-              <h3>Maintenance & Support</h3>
-              <p>Post-launch improvements, bug fixing, updates, feature work, and release support.</p>
-            </article>
+            <!-- SPECIALIZED APPS -->
+            <div class="service-category">
+              <h3>Specialized Apps</h3>
+              <ul>
+                <li>Healthcare & booking</li>
+                <li>Education & e-learning</li>
+                <li>EV / charging stations</li>
+                <li>Business applications</li>
+              </ul>
+            </div>
           </div>
         </section>
 
+        <!-- KMP SECTION -->
+        <section id="kmp" class="content-section container kmp-section">
+          <div class="section-label">Kotlin Multiplatform</div>
+          <div class="kmp-content">
+            <div class="kmp-text">
+              <h2>One Codebase.<br /><span>Android + iOS.</span></h2>
+              <p>
+                Kotlin Multiplatform allows me to share business logic, API layers, and data management between Android and iOS apps while maintaining native platform experiences.
+              </p>
+              <p>
+                This means faster development, consistent behavior across platforms, and significantly reduced maintenance overhead.
+              </p>
+              <div class="kmp-features">
+                <div class="kmp-feature">
+                  <strong>Shared Logic</strong>
+                  <span>Business logic, networking, and database layers shared across platforms</span>
+                </div>
+                <div class="kmp-feature">
+                  <strong>Native UI</strong>
+                  <span>Platform-specific UI using Jetpack Compose (Android) and SwiftUI (iOS)</span>
+                </div>
+                <div class="kmp-feature">
+                  <strong>Reduced Duplication</strong>
+                  <span>Write once, deploy on Android and iOS with minimal platform-specific code</span>
+                </div>
+              </div>
+            </div>
+            <div class="kmp-stack">
+              <div class="stack-box">
+                <h4>Shared Layer</h4>
+                <ul>
+                  <li>API & Networking</li>
+                  <li>Database (Room/Realm)</li>
+                  <li>Business Logic</li>
+                  <li>State Management</li>
+                </ul>
+              </div>
+              <div class="stack-box">
+                <h4>Android</h4>
+                <ul>
+                  <li>Jetpack Compose</li>
+                  <li>MVVM / MVI</li>
+                  <li>Coroutines</li>
+                  <li>Firebase</li>
+                </ul>
+              </div>
+              <div class="stack-box">
+                <h4>iOS</h4>
+                <ul>
+                  <li>SwiftUI</li>
+                  <li>State Mgmt</li>
+                  <li>Async/Await</li>
+                  <li>Firebase</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <!-- AI SECTION -->
+        <section id="ai" class="content-section container ai-section">
+          <div class="section-label">AI Integration</div>
+          <div class="ai-content">
+            <h2>AI-Powered Mobile Development</h2>
+            <p class="ai-intro">
+              I integrate AI and machine learning capabilities into mobile apps to create intelligent, user-friendly experiences.
+            </p>
+            
+            <div class="ai-features">
+              <div class="ai-feature">
+                <h3>LLM APIs & Chat</h3>
+                <p>Integrate large language model APIs to add intelligent chatbots, assistants, and conversational features to your app.</p>
+              </div>
+              <div class="ai-feature">
+                <h3>RAG & Knowledge Bases</h3>
+                <p>Retrieval-Augmented Generation for AI assistants that reference your specific documents, databases, or knowledge bases.</p>
+              </div>
+              <div class="ai-feature">
+                <h3>AI-Powered Search</h3>
+                <p>Semantic search, intelligent recommendations, and content discovery powered by AI embeddings.</p>
+              </div>
+              <div class="ai-feature">
+                <h3>Content Generation</h3>
+                <p>Automated content creation, summarization, and text generation features within your app.</p>
+              </div>
+              <div class="ai-feature">
+                <h3>AI Automation</h3>
+                <p>Workflow automation, smart notifications, and intelligent task management powered by AI.</p>
+              </div>
+              <div class="ai-feature">
+                <h3>Voice & Multimodal</h3>
+                <p>Voice-to-text, audio processing, image recognition, and multimodal AI features.</p>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <!-- FEATURED PROJECTS SECTION -->
         <section id="projects" class="content-section container">
-          <div class="section-header center">
-            <span class="section-tag">Featured work</span>
-            <h2>Mobile products built with real-world business thinking.</h2>
+          <div class="section-label">Featured Work</div>
+          <div class="projects-intro">
+            <h2>Mobile products I've built</h2>
+            <p>Real projects delivering value to users and businesses.</p>
           </div>
 
-          <div class="project-grid">
-            <article class="project-card feature">
-              <div class="project-no">01</div>
-              <h3>Production Android Apps</h3>
-              <p>
-                Built scalable Android apps with modern architecture, performance optimization,
-                clean code, and high-quality user experience.
+          <div class="featured-projects">
+            <div class="project-card">
+              <div class="project-header">
+                <div class="project-number">01</div>
+                <h3>Production Android Applications</h3>
+              </div>
+              <p class="project-description">
+                Scalable Android applications with modern architecture, clean code, and production-ready performance.
               </p>
-            </article>
+              <div class="project-details">
+                <div class="detail-item">
+                  <span class="detail-label">Challenge</span>
+                  <p>Building maintainable, high-performance apps that scale with user growth.</p>
+                </div>
+                <div class="detail-item">
+                  <span class="detail-label">Solution</span>
+                  <p>Clean architecture with MVVM/MVI patterns, Kotlin Coroutines, and optimized data flows.</p>
+                </div>
+                <div class="detail-item">
+                  <span class="detail-label">Key Features</span>
+                  <p>Jetpack Compose UI, Firebase integration, offline support, performance optimization.</p>
+                </div>
+              </div>
+              <div class="project-tech">
+                <span>Kotlin</span>
+                <span>Jetpack Compose</span>
+                <span>MVVM / MVI</span>
+                <span>Firebase</span>
+              </div>
+            </div>
 
-            <article class="project-card">
-              <div class="project-no">02</div>
-              <h3>API & Backend Integrations</h3>
-              <p>
-                Connected apps to reliable APIs, handling auth flows, real-time sync, payments,
-                notifications, and data-driven features.
+            <div class="project-card">
+              <div class="project-header">
+                <div class="project-number">02</div>
+                <h3>API & Backend Integration</h3>
+              </div>
+              <p class="project-description">
+                Complex app integrations with REST APIs, real-time data synchronization, and backend communication.
               </p>
-            </article>
+              <div class="project-details">
+                <div class="detail-item">
+                  <span class="detail-label">Challenge</span>
+                  <p>Reliable API communication, error handling, and data consistency across app states.</p>
+                </div>
+                <div class="detail-item">
+                  <span class="detail-label">Solution</span>
+                  <p>Retrofit with OkHttp, advanced error handling, request interceptors, and caching strategies.</p>
+                </div>
+                <div class="detail-item">
+                  <span class="detail-label">Key Features</span>
+                  <p>Real-time notifications, offline queuing, data synchronization, WebSocket support.</p>
+                </div>
+              </div>
+              <div class="project-tech">
+                <span>REST APIs</span>
+                <span>Retrofit</span>
+                <span>Firebase</span>
+                <span>WebSockets</span>
+              </div>
+            </div>
 
-            <article class="project-card">
-              <div class="project-no">03</div>
-              <h3>App Release & CI/CD</h3>
-              <p>
-                Delivered apps using automated build pipelines, release workflows, and testing
-                practices so updates are reliable and consistent.
+            <div class="project-card">
+              <div class="project-header">
+                <div class="project-number">03</div>
+                <h3>App Release & CI/CD</h3>
+              </div>
+              <p class="project-description">
+                Streamlined app delivery with CI/CD pipelines, automated testing, and Play Store releases.
               </p>
-            </article>
+              <div class="project-details">
+                <div class="detail-item">
+                  <span class="detail-label">Challenge</span>
+                  <p>Reliable automated builds, testing, and release management to app stores.</p>
+                </div>
+                <div class="detail-item">
+                  <span class="detail-label">Solution</span>
+                  <p>GitHub Actions workflows for automated testing, signing, and Play Store deployment.</p>
+                </div>
+                <div class="detail-item">
+                  <span class="detail-label">Key Features</span>
+                  <p>Automated builds, unit/integration testing, app signing, staged rollouts, monitoring.</p>
+                </div>
+              </div>
+              <div class="project-tech">
+                <span>GitHub Actions</span>
+                <span>CI/CD</span>
+                <span>Play Store</span>
+                <span>Testing</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="project-note">
+            <p>Want to see specific project details? Get in touch and let's discuss your requirements.</p>
           </div>
         </section>
 
-        <section id="process" class="content-section container">
-          <div class="section-header center">
-            <span class="section-tag">Process</span>
-            <h2>A clear process from idea to launch.</h2>
-          </div>
+        <!-- HOW I WORK SECTION -->
+        <section id="process" class="content-section container process-section">
+          <div class="section-label">Process</div>
+          <h2>How I Build Mobile Products</h2>
 
-          <div class="process-grid">
-            <article>
-              <span class="step">01</span>
+          <div class="process-steps">
+            <div class="process-step">
+              <div class="step-number">01</div>
               <h3>Understand</h3>
-              <p>Goal alignment, audience needs, app strategy, and technical scope.</p>
-            </article>
-            <article>
-              <span class="step">02</span>
-              <h3>Design</h3>
-              <p>Wireframes, UX flow, screens, and mobile-first interaction patterns.</p>
-            </article>
-            <article>
-              <span class="step">03</span>
-              <h3>Build</h3>
-              <p>Clean implementation with architecture, integrations, and testing.</p>
-            </article>
-            <article>
-              <span class="step">04</span>
-              <h3>Launch</h3>
-              <p>Release support, bug fixes, optimization, and long-term product care.</p>
-            </article>
+              <p>Analyze requirements, business goals, target users, and technical constraints.</p>
+            </div>
+
+            <div class="process-step">
+              <div class="step-number">02</div>
+              <h3>Plan</h3>
+              <p>Design architecture, define data flows, plan integrations, and outline implementation strategy.</p>
+            </div>
+
+            <div class="process-step">
+              <div class="step-number">03</div>
+              <h3>Design & Build</h3>
+              <p>Develop modern UI with Jetpack Compose and implement scalable architecture.</p>
+            </div>
+
+            <div class="process-step">
+              <div class="step-number">04</div>
+              <h3>Integrate</h3>
+              <p>Connect APIs, Firebase, payments, maps, notifications, and AI features.</p>
+            </div>
+
+            <div class="process-step">
+              <div class="step-number">05</div>
+              <h3>Test & Optimize</h3>
+              <p>QA testing, performance optimization, debugging, and security hardening.</p>
+            </div>
+
+            <div class="process-step">
+              <div class="step-number">06</div>
+              <h3>Release & Support</h3>
+              <p>CI/CD setup, Play Store/App Store release, monitoring, and post-launch maintenance.</p>
+            </div>
           </div>
         </section>
 
-        <section id="contact" class="cta-section">
-          <div class="container cta-box">
+        <!-- WHY WORK WITH ME SECTION -->
+        <section id="why" class="content-section container why-section">
+          <div class="section-label">Why Work With Me</div>
+          <h2>Senior experience, modern approach.</h2>
+
+          <div class="why-grid">
+            <div class="why-card">
+              <h3>10+ Years Mobile Development</h3>
+              <p>Extensive experience building and shipping Android applications for millions of users.</p>
+            </div>
+
+            <div class="why-card">
+              <h3>Modern Kotlin & Compose</h3>
+              <p>Expert in latest Android technologies including Jetpack Compose, Coroutines, and Flow patterns.</p>
+            </div>
+
+            <div class="why-card">
+              <h3>Kotlin Multiplatform (KMP)</h3>
+              <p>Ability to build Android and iOS apps from a shared codebase, reducing development time and costs.</p>
+            </div>
+
+            <div class="why-card">
+              <h3>Complete Integrations</h3>
+              <p>Proficient with Firebase, payment APIs, Google Maps, real-time messaging, and third-party services.</p>
+            </div>
+
+            <div class="why-card">
+              <h3>AI & LLM Integration</h3>
+              <p>Experience integrating AI chatbots, LLM APIs, RAG systems, and intelligent features into mobile apps.</p>
+            </div>
+
+            <div class="why-card">
+              <h3>Production & Release Ready</h3>
+              <p>CI/CD pipelines, Play Store optimization, app signing, staged rollouts, and performance monitoring.</p>
+            </div>
+
+            <div class="why-card">
+              <h3>Clean Architecture</h3>
+              <p>Maintainable, scalable code using MVVM/MVI patterns and best practices for long-term growth.</p>
+            </div>
+
+            <div class="why-card">
+              <h3>Long-Term Maintenance</h3>
+              <p>Can support your app through updates, new features, bug fixes, and evolution as your business grows.</p>
+            </div>
+          </div>
+        </section>
+
+        <!-- CONTACT SECTION -->
+        <section id="contact" class="content-section container contact-wrap">
+          <div class="section-label">Let's Talk</div>
+          <h3>Have a mobile product idea?<br /><span>Let's turn it into reality.</span></h3>
+          <div class="contact-subtext">
+            <p>Whether you need a new app built, an existing app improved, or AI features integrated, I can help you build a production-ready mobile product from idea to launch and beyond.</p>
+          </div>
+          <div class="contact-boxes">
             <div>
-              <span class="section-tag light">Let's talk</span>
-              <h2>Have an Android project in mind? Let’s build it.</h2>
+              <span>Email</span>
+              <a href="mailto:mbmanjit5@gmail.com">mbmanjit5@gmail.com</a>
             </div>
-            <div class="cta-actions">
-              <a href="mailto:mbmanjit5@gmail.com" class="btn primary">mbmanjit5@gmail.com</a>
-              <a href="tel:+918091706561" class="btn secondary">+91 8091706561</a>
+            <div>
+              <span>Phone</span>
+              <a href="tel:+918091706561">+91 8091706561</a>
             </div>
+            <div>
+              <span>LinkedIn</span>
+              <a href="https://www.linkedin.com/in/manjit-singh-immediate-joiner-2b732021/" target="_blank" rel="noopener">linkedin.com/in/manjit-singh</a>
+            </div>
+            <div>
+              <span>GitHub</span>
+              <a href="https://github.com/manjit1990" target="_blank" rel="noopener">github.com/manjit1990</a>
+            </div>
+          </div>
+
+          <div class="contact-cta">
+            <a class="btn primary" href="mailto:mbmanjit5@gmail.com">Start a Project</a>
+            <a class="btn secondary" href="./manjit-singh-portfolio/Manjit_Resume.pdf" download="Manjit_Singh_Resume.pdf">Download Resume</a>
           </div>
         </section>
       </main>
 
       <footer class="footer container">
-        <p>© 2026 Manjit Singh. All rights reserved.</p>
-        <div class="footer-links">
-          <a href="#about">About</a>
-          <a href="services.html">Services</a>
-          <a href="#contact">Contact</a>
+        <div class="footer-content">
+          <p><strong>Manjit Singh</strong></p>
+          <p>Senior Mobile Engineer • Android • Kotlin • Jetpack Compose • Kotlin Multiplatform • AI</p>
         </div>
       </footer>
     </div>
