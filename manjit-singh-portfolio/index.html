@@ -67,7 +67,8 @@
             </div>
 
             <div class="hero-actions">
-              <a class="btn primary" href="#projects">Explore my work <span aria-hidden="true">↗</span></a>
+              <a class="btn primary" href="#demo-request" data-demo-open>Get a Free App Demo <span aria-hidden="true">↗</span></a>
+              <a class="btn secondary" href="#projects">Explore my work <span aria-hidden="true">↗</span></a>
               <a class="btn secondary" href="#contact">Let’s build something <span aria-hidden="true">↗</span></a>
             </div>
           </div>
@@ -509,6 +510,47 @@
           </div>
         </section>
 
+        <!-- FREE DEMO SECTION -->
+        <section id="free-demo" class="content-section container demo-section" aria-labelledby="demo-title">
+          <div class="section-label">Free Demo</div>
+          <div class="demo-layout">
+            <div class="demo-copy">
+              <h2 id="demo-title">Have an App Idea? <span>Let’s Build a Free Demo.</span></h2>
+              <p>Validate your app idea before committing to full development. I can build a limited prototype or selected app screens so you can review the concept and discuss the next steps.</p>
+              <a class="btn primary" href="#demo-request" data-demo-open>Request a Free Demo <span aria-hidden="true">↗</span></a>
+            </div>
+            <aside class="demo-scope" aria-label="What the free demo includes">
+              <span class="automation-eyebrow">A focused first step</span>
+              <ul>
+                <li>Native Android development using Kotlin and Jetpack Compose.</li>
+                <li>UI prototype or a small, clearly scoped app flow.</li>
+                <li>Initial discussion of requirements.</li>
+              </ul>
+              <p>Full development available as a separate paid engagement.</p>
+            </aside>
+          </div>
+          <details id="demo-request" class="demo-request">
+            <summary>Open demo request form</summary>
+            <form name="free-demo" method="POST" action="/demo-thank-you" data-netlify="true" netlify-honeypot="bot-field" class="demo-form">
+              <input type="hidden" name="form-name" value="free-demo" />
+              <p hidden><label>Leave this empty: <input name="bot-field" tabindex="-1" autocomplete="off" /></label></p>
+              <p class="demo-form-intro">Tell me about your idea. All fields are required unless marked optional.</p>
+              <div class="demo-fields">
+                <label for="demo-name">Full name<input id="demo-name" name="name" type="text" autocomplete="name" maxlength="120" required /></label>
+                <label for="demo-email">Email address<input id="demo-email" name="email" type="email" autocomplete="email" maxlength="254" required /></label>
+                <label for="demo-type">App type<select id="demo-type" name="app-type" required>
+                  <option value="" disabled selected>Select an app type</option>
+                  <option>Business</option><option>Marketplace</option><option>Taxi/Ride Booking</option><option>Social</option><option>AI-powered app</option><option>Other</option>
+                </select></label>
+                <label for="demo-budget">Budget range (optional)<input id="demo-budget" name="budget-range" type="text" maxlength="120" placeholder="For full development, including currency" /></label>
+                <label class="demo-field-wide" for="demo-idea">Brief app idea<textarea id="demo-idea" name="app-idea" rows="4" maxlength="4000" placeholder="Who is the app for, and what problem does it solve?" required></textarea></label>
+                <label class="demo-field-wide" for="demo-features">Required features<textarea id="demo-features" name="required-features" rows="3" maxlength="4000" placeholder="List the key screens or features you have in mind." required></textarea></label>
+              </div>
+              <div class="demo-submit"><button class="btn primary" type="submit">Request My Free Demo</button><p class="demo-status" role="status" aria-live="polite"></p></div>
+            </form>
+          </details>
+        </section>
+
         <!-- HOW I WORK SECTION -->
         <section id="process" class="content-section container process-section">
           <div class="section-label">Process</div>
@@ -628,6 +670,7 @@
           </div>
 
           <div class="contact-cta">
+            <a class="btn primary" href="#demo-request" data-demo-open>Request a Free Demo <span aria-hidden="true">↗</span></a>
             <a class="btn secondary" href="resume.html">View résumé <span aria-hidden="true">↗</span></a>
             <a class="btn primary" href="mailto:mbmanjit5@gmail.com">Start a Project</a>
             <a class="btn secondary" href="#projects">View My Work</a>
