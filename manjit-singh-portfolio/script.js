@@ -73,6 +73,24 @@ if (demoRequest) {
   const demoForm = demoRequest.querySelector('form');
   const submitButton = demoForm.querySelector('[type="submit"]');
   const status = demoForm.querySelector('.demo-status');
+  const requestMessage = () => {
+    const fields = new FormData(demoForm);
+    return [
+      'Free app demo request',
+      `Name: ${fields.get('name') || ''}`,
+      `Email: ${fields.get('email') || ''}`,
+      `App type: ${fields.get('app-type') || ''}`,
+      `App idea: ${fields.get('app-idea') || ''}`,
+      `Required features: ${fields.get('required-features') || ''}`,
+      `Budget: ${fields.get('budget-range') || 'Not specified'}`
+    ].join('\n\n');
+  };
+  demoForm.querySelector('[data-demo-whatsapp]').addEventListener('click', event => {
+    event.currentTarget.href = `https://wa.me/919780219154?text=${encodeURIComponent(requestMessage())}`;
+  });
+  demoForm.querySelector('[data-demo-email]').addEventListener('click', event => {
+    event.currentTarget.href = `mailto:mbmanjit5@gmail.com?subject=Free%20app%20demo%20request&body=${encodeURIComponent(requestMessage())}`;
+  });
   demoForm.addEventListener('submit', async event => {
     event.preventDefault();
     if (submitButton.disabled) return;
@@ -83,6 +101,7 @@ if (demoRequest) {
     try {
       const response = await fetch('/', {
         method: 'POST',
+        signal: AbortSignal.timeout(20000),
         headers: { 'Content-Type': 'application/x-www-form-urlencoded' },
         body: new URLSearchParams(new FormData(demoForm)).toString()
       });
@@ -92,7 +111,7 @@ if (demoRequest) {
       status.textContent = 'Your demo request has been received. I’ll reply by email to discuss your idea and scope.';
     } catch {
       status.dataset.state = 'error';
-      status.textContent = 'Your request could not be sent. Please try again or email mbmanjit5@gmail.com. Your details are still here.';
+      status.textContent = 'We could not confirm your request. Your details are still here. Try again, or use “Send via WhatsApp” or the email link below to send your completed request directly.';
     } finally {
       submitButton.disabled = false;
       submitButton.textContent = 'Request My Free Demo';
