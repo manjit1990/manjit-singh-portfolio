@@ -99,3 +99,61 @@
 .project-note a:hover{text-decoration:underline}
 @media(max-width:760px){.project-grid{grid-template-columns:1fr;gap:18px}.project-tile-summary{min-height:0}.project-tile-body{padding:22px}.project-tile h3{font-size:21px}}
 @media(max-width:560px){.project-case-content .project-shots{grid-template-columns:repeat(3,minmax(125px,1fr));overflow-x:auto}.project-case-content .quote-screenshots a{flex-basis:65%;min-width:155px}}
+
+
+/* Subtle, performance-friendly portfolio motion */
+@media (prefers-reduced-motion: no-preference) {
+  .hero-copy > * {
+    animation: hero-enter 650ms cubic-bezier(.2,.75,.25,1) both;
+  }
+  .hero-copy > *:nth-child(2) { animation-delay: 70ms; }
+  .hero-copy > *:nth-child(3) { animation-delay: 130ms; }
+  .hero-copy > *:nth-child(4) { animation-delay: 190ms; }
+  .hero-copy > *:nth-child(5) { animation-delay: 250ms; }
+  .hero-visual { animation: hero-enter 800ms cubic-bezier(.2,.75,.25,1) 120ms both; }
+  .project-tile, .service-category, .tech-category {
+    transition: transform 220ms ease, box-shadow 220ms ease, border-color 220ms ease;
+  }
+  .project-tile-media img {
+    transition: transform 350ms cubic-bezier(.2,.75,.25,1);
+  }
+  .project-tile:hover, .project-tile:focus-within,
+  .service-category:hover, .tech-category:hover {
+    transform: translateY(-4px);
+  }
+  .project-tile:hover .project-tile-media img,
+  .project-tile:focus-within .project-tile-media img {
+    transform: scale(1.035);
+  }
+  .btn, .btn-pill, .main-nav a {
+    transition: transform 180ms ease, color 180ms ease, background-color 180ms ease, border-color 180ms ease;
+  }
+  .btn:hover, .btn-pill:hover { transform: translateY(-2px); }
+  .main-nav a:hover { transform: translateY(-1px); }
+  .hero-visual .float-tag { animation: tag-float 5s ease-in-out infinite; }
+  .hero-visual .float-tag.second { animation-delay: -1.5s; }
+  .hero-visual .float-tag.third { animation-delay: -3s; }
+  .reveal {
+    opacity: 0;
+    transform: translateY(16px);
+    transition: opacity 600ms ease, transform 600ms cubic-bezier(.2,.75,.25,1);
+  }
+  .reveal.is-visible { opacity: 1; transform: translateY(0); }
+}
+@keyframes hero-enter {
+  from { opacity: 0; transform: translateY(14px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+@keyframes tag-float {
+  0%, 100% { transform: translateY(0); }
+  50% { transform: translateY(-4px); }
+}
+@media (prefers-reduced-motion: reduce) {
+  *, *::before, *::after {
+    scroll-behavior: auto !important;
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+  }
+  .reveal { opacity: 1 !important; transform: none !important; }
+}
