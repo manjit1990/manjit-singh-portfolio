@@ -21,3 +21,24 @@
 .quote-screenshots a:hover img{transform:scale(1.025)}
 .quote-screenshots:focus-visible{outline:2px solid var(--primary);outline-offset:4px}
 @media(max-width:560px){.quote-screenshots a{flex-basis:82%;max-width:320px}.project-card--quotes .project-details{grid-column:1;grid-row:auto}}
+
+
+/* Match the quotes project to the featured case-study card while keeping it compact */
+.project-card--quotes{grid-template-columns:1fr 1.25fr;align-items:start}
+.project-card--quotes .project-header{grid-column:1;grid-row:1}
+.project-card--quotes .project-description{grid-column:1;grid-row:2}
+.project-card--quotes .project-link{grid-column:1;grid-row:3;justify-self:start}
+.project-card--quotes .project-details{grid-column:2;grid-row:1/4;display:grid;align-content:start;gap:16px}
+.project-card--quotes .project-tech{grid-column:1/-1;grid-row:4;align-content:start;margin-top:8px}
+.project-card--quotes .quote-screenshots{grid-column:1/-1;grid-row:5;display:flex;gap:18px;overflow-x:auto;overscroll-behavior-x:contain;scroll-snap-type:x mandatory;padding:6px 2px 14px;margin-top:8px;max-width:100%;-webkit-overflow-scrolling:touch}
+.project-card--quotes .quote-screenshots a{flex:0 0 31%;min-width:180px;max-width:260px;scroll-snap-align:start;display:block;border:1px solid var(--line);border-radius:14px;overflow:hidden;background:var(--bg)}
+.project-card--quotes .quote-screenshots img{width:100%;aspect-ratio:9/16;object-fit:cover;transition:transform .25s}
+.project-card--quotes .quote-screenshots a:hover img{transform:scale(1.025)}
+.project-card--quotes .project-shots-note{grid-column:1/-1;grid-row:6;font-size:11px;margin:0}
+@media(max-width:800px){
+ .project-card--quotes{grid-template-columns:1fr}
+ .project-card--quotes .project-header,.project-card--quotes .project-description,.project-card--quotes .project-link,.project-card--quotes .project-details,.project-card--quotes .project-tech,.project-card--quotes .quote-screenshots,.project-card--quotes .project-shots-note{grid-column:1;grid-row:auto}
+ .project-card--quotes .project-details{margin-top:4px}
+ .project-card--quotes .quote-screenshots a{flex-basis:42%;min-width:155px}
+}
+@media(max-width:560px){.project-card--quotes .quote-screenshots a{flex-basis:68%;min-width:175px;max-width:240px}.project-card--quotes .project-link{width:auto}}
