@@ -12,3 +12,12 @@
 
 .project-card--featured .project-details{grid-row:1/5}.project-link{grid-column:1;justify-self:start;align-self:start;min-height:42px;margin:6px 0 10px}.project-shots{grid-column:1/-1;display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:18px;margin-top:22px;max-width:760px}.project-shots figure{margin:0}.project-shots img{width:100%;height:auto;border:1px solid var(--line);border-radius:14px}.project-shots figcaption{font:10px var(--mono);letter-spacing:1px;text-transform:uppercase;color:var(--muted);margin-top:8px}.project-shots-note{grid-column:1/-1;font-size:11px;margin:4px 0 0}
 @media(max-width:560px){.project-link{grid-column:1;width:100%}.project-shots{grid-template-columns:repeat(3,minmax(140px,1fr));overflow-x:auto;scroll-snap-type:x mandatory;padding-bottom:8px}.project-shots figure{scroll-snap-align:start}.project-card--featured .project-details{grid-row:auto}}
+
+
+/* Motivational quotes project: compact horizontal screenshot gallery */
+.quote-screenshots{grid-column:1/-1;display:flex;gap:16px;overflow-x:auto;overscroll-behavior-x:contain;scroll-snap-type:x mandatory;padding:4px 2px 12px;margin-top:18px;max-width:100%;-webkit-overflow-scrolling:touch}
+.quote-screenshots a{flex:0 0 min(68%,360px);scroll-snap-align:start;display:block;border:1px solid var(--line);border-radius:10px;overflow:hidden;background:var(--bg)}
+.quote-screenshots img{width:100%;aspect-ratio:16/9;object-fit:cover;transition:transform .25s}
+.quote-screenshots a:hover img{transform:scale(1.025)}
+.quote-screenshots:focus-visible{outline:2px solid var(--primary);outline-offset:4px}
+@media(max-width:560px){.quote-screenshots a{flex-basis:82%;max-width:320px}.project-card--quotes .project-details{grid-column:1;grid-row:auto}}
