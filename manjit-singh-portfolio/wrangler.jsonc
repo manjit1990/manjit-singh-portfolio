@@ -1,0 +1,9 @@
+
+{
+  "$schema": "node_modules/wrangler/config-schema.json",
+  "name": "manjit-singh-portfolio",
+  "compatibility_date": "2026-10-25",
+  "assets": {
+    "directory": "./"
+  }
+}
