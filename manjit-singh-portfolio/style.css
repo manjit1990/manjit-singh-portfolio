@@ -57,3 +57,45 @@
 #main-content .projects-intro .btn{margin-top:8px}
 @media(max-width:800px){.projects-page-hero{grid-template-columns:1fr;gap:28px;padding-block:45px}.projects-page-aside{padding:28px}.projects-page-aside:after{margin-top:22px}}
 @media(max-width:560px){.projects-page-hero h1{font-size:clamp(42px,11vw,56px)}.projects-page-aside{padding:24px}.projects-page-cta .contact-wrap{padding:30px 22px}}
+
+
+/* Responsive project-card grid */
+.project-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:24px;margin-top:38px;align-items:start}
+.project-tile{min-width:0;overflow:hidden;border:1px solid var(--line);border-radius:12px;background:var(--card);transition:transform .2s,border-color .2s}
+.project-tile:hover{transform:translateY(-3px);border-color:#657553}
+.project-tile-media{position:relative;display:flex;align-items:center;justify-content:center;overflow:hidden;aspect-ratio:16/9;background:#242b21}
+.project-tile-media img{width:100%;height:100%;object-fit:cover;transition:transform .25s}
+.project-tile-media:hover img{transform:scale(1.025)}
+.project-tile-media--portrait{aspect-ratio:16/9}
+.project-tile-media--portrait img{object-fit:cover;object-position:center 28%}
+.project-tile-number{position:absolute;top:14px;left:14px;z-index:1;display:grid;place-items:center;width:34px;height:34px;border:1px solid #d0dda7;background:#171a17e8;color:var(--primary);border-radius:6px;font:11px var(--mono)}
+.project-tile-body{padding:25px}
+.project-tile-kicker{margin:0 0 9px;color:var(--primary);font:9px var(--mono);letter-spacing:1.3px;text-transform:uppercase}
+.project-tile h3{font-size:22px;margin-bottom:12px}
+.project-tile-summary{font-size:13px;line-height:1.8;min-height:68px;margin-bottom:18px}
+.project-tile .project-tech{align-content:start;margin:0 0 18px}
+.project-tile-actions{display:flex;flex-wrap:wrap;gap:10px;margin-bottom:14px}
+.project-tile-actions .btn{min-height:40px;padding:9px 14px;font-size:11px}
+.project-case-study{border-top:1px solid var(--line);margin-top:16px;padding-top:13px}
+.project-case-study summary{cursor:pointer;list-style:none;color:var(--primary);font-size:12px;font-weight:800;display:flex;justify-content:space-between;align-items:center;gap:12px}
+.project-case-study summary::-webkit-details-marker{display:none}
+.project-case-study summary:after{content:'+';font-size:19px;font-weight:400}
+.project-case-study[open] summary:after{content:'−'}
+.project-case-content{padding-top:18px}
+.project-case-content .detail-item{padding-bottom:14px;margin-bottom:14px}
+.project-case-content .detail-item p{font-size:12px;line-height:1.8}
+.project-case-content .project-shots{grid-template-columns:repeat(3,minmax(0,1fr));gap:10px;margin-top:18px}
+.project-case-content .project-shots img{border-radius:8px}
+.project-case-content .project-shots figcaption{font-size:8px;letter-spacing:.5px}
+.project-case-content .quote-screenshots{gap:10px;margin-top:18px}
+.project-case-content .quote-screenshots a{flex-basis:31%;min-width:0;max-width:none}
+.project-case-content .quote-screenshots img{aspect-ratio:9/16;object-fit:cover}
+.project-tile--concept .project-tile-visual{position:relative;display:flex;align-items:center;justify-content:center;flex-direction:column;gap:14px;aspect-ratio:16/9;background:radial-gradient(ellipse at 50% 35%,#39452d 0%,#252d21 55%,#1b201a 100%);color:var(--primary);overflow:hidden}
+.project-tile-visual--api{background:radial-gradient(ellipse at 50% 35%,#293b49 0%,#222a2c 58%,#1b201a 100%)}
+.project-tile-visual--release{background:radial-gradient(ellipse at 50% 35%,#4a3b2a 0%,#2b2920 58%,#1b201a 100%)}
+.project-visual-icon{font:700 48px var(--display);letter-spacing:-3px}
+.project-visual-caption{font:9px var(--mono);letter-spacing:2px;text-transform:uppercase;color:var(--muted)}
+.project-note a{color:var(--primary);text-decoration:none}
+.project-note a:hover{text-decoration:underline}
+@media(max-width:760px){.project-grid{grid-template-columns:1fr;gap:18px}.project-tile-summary{min-height:0}.project-tile-body{padding:22px}.project-tile h3{font-size:21px}}
+@media(max-width:560px){.project-case-content .project-shots{grid-template-columns:repeat(3,minmax(125px,1fr));overflow-x:auto}.project-case-content .quote-screenshots a{flex-basis:65%;min-width:155px}}
