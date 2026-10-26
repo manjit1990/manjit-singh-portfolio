@@ -99,16 +99,26 @@ if (demoRequest) {
     status.dataset.state = 'pending';
     status.textContent = 'Sending your demo request…';
     try {
-      const response = await fetch('/', {
+      const fields = new FormData(demoForm);
+      const response = await fetch('/api/demo-request', {
         method: 'POST',
         signal: AbortSignal.timeout(20000),
-        headers: { 'Content-Type': 'application/x-www-form-urlencoded' },
-        body: new URLSearchParams(new FormData(demoForm)).toString()
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify({
+          name: fields.get('name'),
+          email: fields.get('email'),
+          appType: fields.get('app-type'),
+          budget: fields.get('budget-range') || '',
+          idea: fields.get('app-idea'),
+          features: fields.get('required-features'),
+          website: fields.get('website') || ''
+        })
       });
-      if (!response.ok) throw new Error('Submission failed');
+      const result = await response.json().catch(() => ({}));
+      if (!response.ok || !result.ok) throw new Error(result.error || 'Submission failed');
       demoForm.reset();
       status.dataset.state = 'success';
-      status.textContent = 'Your demo request has been received. I’ll reply by email to discuss your idea and scope.';
+      status.textContent = 'Your request has been saved successfully. I’ll follow up by email to discuss your idea and scope.';
     } catch {
       status.dataset.state = 'error';
       status.textContent = 'We could not confirm your request. Your details are still here. Try again, or use “Send via WhatsApp” or the email link below to send your completed request directly.';
