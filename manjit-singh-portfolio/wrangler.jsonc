@@ -1,9 +1,17 @@
-
 {
   "$schema": "node_modules/wrangler/config-schema.json",
   "name": "manjit-singh-portfolio",
+  "main": "cloudflare-demo-worker.js",
   "compatibility_date": "2026-10-25",
   "assets": {
-    "directory": "./"
-  }
+    "directory": "./",
+    "binding": "ASSETS"
+  },
+  "d1_databases": [
+    {
+      "binding": "DB",
+      "database_name": "portfolio-db",
+      "database_id": "YOUR_DATABASE_ID"
+    }
+  ]
 }
